@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nayim Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">
+  <img src="logo.png" alt="Logo">
+</div>
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Portfolio</li>
+    <li>Contact</li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="left">
+    <p class="As-salamualaikum">As-salamualaikum</p>
+    <h1>I’m Abir Hossain Nayeem</h1>
+    <h2 class="typing"></h2>
+    <p class="desc"><p>
+Hi, I’m Abir Hossain Nayeem — a creative Graphic Designer focused on modern, clean, and eye-catching designs that help brands stand out.
+</p></p>
+    <a href="#portfolio">
+  <button>View Portfolio</button>
+</a>
+  </div>
+
+  <div class="right">
+   <img src="profile.png">
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <h2>My Work</h2>
+
+  <div class="grid">
+    <img src="A4_Flyer_Mockup_2.jpg">
+    <img src="Free_Business_Card_Mockup_3.jpg">
+    <img src="imgi_112_8f060e243744387.Y3JvcCwzODM1LDMwMDAsODUsMA.jpg">
+    <img src="imgi_138_af7b1e236377401.Y3JvcCwxMjQwLDk3MCwxNjUsMA.jpg">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact</h2>
+  <p>Email: nayimhossain357@gmail.com</p>
+  <p>Phone: +8801601-555224</p>
+</section>
+
+<!-- SCRIPT -->
+<script>
+const text = "Graphic Designer";
+let i = 0;
+
+function typing(){
+  if(i < text.length){
+    document.querySelector(".typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 80);
+  }
+}
+typing();
+</script>
+
+</body>
+</html>
